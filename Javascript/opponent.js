@@ -29,11 +29,11 @@ function process(e) {
 				
 		var display = document.getElementById('results');
 
-		display.innerHTML += '<tr><td>' + ++count + '</td><td>' + selectionString(user) + '</td><td>' + selectionString(enemy) + '</td><td>' + result + '</td></tr>';	
+		display.innerHTML += '<tr><td>' + ++count + '</td><td>' + valueToString(user) + '</td><td>' + valueToString(enemy) + '</td><td>You ' + result + '</td></tr>';	
 		alert('You ' + result + '!');
 	}
 }
 
-function selectionString(e){
+function valueToString(e){
 	return (e === 1 ? 'Rock': e === 2 ? 'Paper' : 'Scissors');
 }

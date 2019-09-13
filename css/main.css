@@ -1,15 +1,46 @@
 @charset "ISO-8859-1";
 
+p{
+	font-size: 14px;
+}
+
+h1{
+	font-size: 25px;
+}
+
+header h1{
+	padding-top: 10px;
+}
+
+h2{
+	font-size: 18px;
+}
+
 body{
-	background-color: #2045D8;
+	background-color: FloralWhite;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	
+}
+
+header{
+		background-color: royalblue;
+		height: 50px;
+}
+
+article{
+	border: 1px dashed black;
+	padding: 10px;
+	margin: 10px;
 }
 
 main{
-	width: 50%;
+	background-color: #2045D8;
+	width: 25%;
 	border: 2px solid black;
-	padding: 20px;
+	padding-bottom: 20px;
 	margin: 0 auto;
 	text-align: center;
+	margin-top: 50px;
 }
 
 #selectDiv{

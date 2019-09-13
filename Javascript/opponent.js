@@ -1,6 +1,8 @@
 /**
- * 
+ * Tate's Game's JavaScript
  */
+
+var count  = 0;
 
 function process(e) {
 	var result = '';
@@ -10,23 +12,28 @@ function process(e) {
 		var enemy = Math.floor(Math.random() * (3 - 1 + 1)) + 1;
 		
 		if (user === enemy){
-			result = 'Tie';
+			result = 'Tied';
 		} else {
 			switch(user){
 				case 1:
-					result = (enemy === 2 ? 'Lost' : 'Win');
+					result = (enemy === 2 ? 'Lost' : 'Won');
 					break;
 				case 2:
-					result = (enemy === 3 ? 'Lost' : 'Win');
+					result = (enemy === 3 ? 'Lost' : 'Won');
 					break;
 				case 3:
-					result = (enemy === 1 ? 'Lost' : 'Win');
+					result = (enemy === 1 ? 'Lost' : 'Won');
 					break;
 			}
 		}
-	
+				
 		var display = document.getElementById('results');
-		
-		display.innerHTML = result + ' ' + enemy;	
+
+		display.innerHTML += '<tr><td>' + ++count + '</td><td>' + selectionString(user) + '</td><td>' + selectionString(enemy) + '</td><td>' + result + '</td></tr>';	
+		alert('You ' + result + '!');
 	}
+}
+
+function selectionString(e){
+	return (e === 1 ? 'Rock': e === 2 ? 'Paper' : 'Scissors');
 }

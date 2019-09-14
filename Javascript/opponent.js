@@ -31,9 +31,16 @@ function process(e) {
 
 		display.innerHTML += '<tr><td>' + ++count + '</td><td>' + valueToString(user) + '</td><td>' + valueToString(enemy) + '</td><td>You ' + result + '</td></tr>';	
 		alert('You ' + result + '!');
+		
+		updateScroll();
 	}
 }
 
 function valueToString(e){
 	return (e === 1 ? 'Rock': e === 2 ? 'Paper' : 'Scissors');
+}
+
+function updateScroll(){
+    var element = document.getElementById("results");
+    element.scrollTop = element.scrollHeight;
 }

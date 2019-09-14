@@ -19,7 +19,6 @@ h2{
 body{
 	background-color: FloralWhite;
 	font-family: "Trebuchet MS", Helvetica, sans-serif;
-	
 }
 
 header{
@@ -36,7 +35,7 @@ article{
 
 main{
 	background-color: #2045D8;
-	width: 25%;
+	width: 500px;
 	border: 2px solid black;
 	padding-bottom: 20px;
 	margin: 0 auto;
@@ -55,13 +54,31 @@ main{
 }
 
 table {
-  border-collapse: collapse;
+  	border-collapse: collapse;
+  	table-layout: fixed;
   	border: 1px solid black;
 	margin: 0 auto;
 	background-color: DodgerBlue;
 }
 
 table, td, th {
-  border: 1px solid black;
-  padding:5px;
+ 	border: 1px solid black;
+  	padding:5px;
+}
+
+tbody{
+	display:block ;
+	height: 150px;
+	overflow-y: auto;
+	width:100%;
+}
+
+thead tr{
+  display:block;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;
+  width: 85px;
 }

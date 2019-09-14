@@ -5,7 +5,13 @@ p{
 }
 
 h1{
-	font-size: 25px;
+	font-size: 28px;
+	font-weight: bold;
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 header h1{
@@ -22,7 +28,7 @@ body{
 }
 
 header{
-		background-color: royalblue;
+		color: FloralWhite;
 		height: 50px;
 }
 
@@ -68,7 +74,8 @@ table, td, th {
 
 tbody{
 	display:block ;
-	height: 150px;
+	height: auto;
+	max-height: 150px;
 	overflow-y: auto;
 	width:100%;
 }
